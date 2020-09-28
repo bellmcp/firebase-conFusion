@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 
 export const Loading = () => {
-    return(
-        <div className="col-12">
-            <span className="fa fa-spinner fa-pulse fa-3x fa-fw text-primary"></span>
-            <p>Loading . . .</p>
-        </div>
-    );
+  return (
+    <div className="col-12 loading">
+      <span className="fa fa-spinner fa-pulse fa-2x fa-fw text-muted"></span>
+    </div>
+  );
 };
