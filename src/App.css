@@ -2,6 +2,15 @@ a {
   color: #c49a8f;
 }
 
+.breadcrumb {
+  background-color: unset;
+  border-radius: 0;
+}
+
+.blockquote {
+  text-align: center;
+}
+
 .content {
   padding: 40px 0;
 }
@@ -101,6 +110,7 @@ address {
 }
 
 .jumbotron {
+  text-align: center;
   padding: 120px 30px;
   border-radius: 0;
   margin: 0px auto;
@@ -139,4 +149,43 @@ address {
   opacity: 0.01;
   transform: translateX(100%);
   transition: all 300ms ease-out;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 20px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: -20px;
+  box-shadow: inset 0 0 0 1px #a5a4a4;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #a5a4a4;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 }

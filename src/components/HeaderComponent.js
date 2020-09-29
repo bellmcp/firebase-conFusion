@@ -138,13 +138,14 @@ class Header extends Component {
         <Jumbotron>
           <div className="container">
             <div className="row row-header">
-              <div className="col-12 col-sm-6">
+              <div className="col-12 col-sm-6 mx-auto">
                 <h1>An Extraordinery Experience</h1>
                 <p>
                   We take inspiration from the World's best cuisines, and create
                   a unique fusion experience. Our lipsmacking creations will
                   tickle your culinary senses.
                 </p>
+                <div class="icon-scroll" />
               </div>
             </div>
           </div>
@@ -191,7 +192,7 @@ class Header extends Component {
               </Button>
             </Form>
             <p></p>
-            <Button color="danger" onClick={this.handleGoogleLogin}>
+            <Button color="primary" onClick={this.handleGoogleLogin}>
               <span className="fa fa-google fa-lg"></span> Login with Google
             </Button>
           </ModalBody>

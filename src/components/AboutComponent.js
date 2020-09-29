@@ -77,6 +77,7 @@ function About(props) {
       <div className="row row-content">
         <div className="col-12 col-md-6">
           <h2>Our History</h2>
+          <br />
           <p>
             Started in 2010, Ristorante con Fusion quickly established itself as
             a culinary icon par excellence in Hong Kong. With its unique brand
@@ -92,10 +93,10 @@ function About(props) {
             cuisines in a pan.
           </p>
         </div>
-        <div className="col-12 col-md-5">
+        <div className="col-12 col-md-5 offset-1">
           <Card>
             <CardHeader className="bg-muted text-dark">
-              Facts At a Glance
+              Ristorante con Fusion
             </CardHeader>
             <CardBody>
               <dl className="row p-1">
@@ -111,31 +112,31 @@ function About(props) {
             </CardBody>
           </Card>
         </div>
-        <div className="col-12">
-          <Card>
-            <CardBody className="bg-faded">
-              <blockquote className="blockquote">
-                <p className="mb-0">
-                  You better cut the pizza in four pieces because I'm not hungry
-                  enough to eat six.
-                </p>
-                <footer className="blockquote-footer">
-                  Yogi Berra,
-                  <cite title="Source Title">
-                    The Wit and Wisdom of Yogi Berra, P. Pepe, Diversion Books,
-                    2014
-                  </cite>
-                </footer>
-              </blockquote>
-            </CardBody>
-          </Card>
-        </div>
       </div>
       <div className="row row-content">
         <div className="col-12">
           <h2>Corporate Leadership</h2>
         </div>
         <LeaderList leaders={props.leaders} />
+      </div>
+      <div className="col-12 content">
+        <Card>
+          <CardBody className="bg-faded">
+            <blockquote className="blockquote">
+              <p className="mb-0">
+                You better cut the pizza in four pieces because I'm not hungry
+                enough to eat six.
+              </p>
+              <footer className="blockquote-footer">
+                Yogi Berra,
+                <cite title="Source Title">
+                  The Wit and Wisdom of Yogi Berra, P. Pepe, Diversion Books,
+                  2014
+                </cite>
+              </footer>
+            </blockquote>
+          </CardBody>
+        </Card>
       </div>
     </div>
   );

@@ -63,7 +63,7 @@ const Menu = (props) => {
             <hr />
           </div>
         </div>
-        <div className="row">{menu}</div>
+        <div className="row content">{menu}</div>
       </div>
     );
 };
