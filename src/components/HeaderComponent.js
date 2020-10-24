@@ -182,19 +182,25 @@ class Header extends Component {
                   Remember me
                 </Label>
               </FormGroup>
-              <Button
-                type="submit"
-                value="submit"
-                color="primary"
-                className="navbar-btn"
-              >
-                Login
-              </Button>
+              <hr />
+              <div className="login-button-container">
+                <Button
+                  type="submit"
+                  value="submit"
+                  className="comment-button margin-right"
+                >
+                  Login
+                </Button>
+                <span>or</span>
+                <Button
+                  className="google-button"
+                  color="primary"
+                  onClick={this.handleGoogleLogin}
+                >
+                  <span className="fa fa-google fa-lg"></span> Login with Google
+                </Button>
+              </div>
             </Form>
-            <p></p>
-            <Button color="primary" onClick={this.handleGoogleLogin}>
-              <span className="fa fa-google fa-lg"></span> Login with Google
-            </Button>
           </ModalBody>
         </Modal>
       </React.Fragment>

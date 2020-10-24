@@ -46,9 +46,6 @@ class Contact extends Component {
           </div>
         </div>
         <div className="row row-content">
-          <div className="col-12">
-            <h3>Location Information</h3>
-          </div>
           <div className="col-12 col-sm-4 offset-sm-1">
             <h5>Our Address</h5>
             <address>
@@ -71,19 +68,15 @@ class Contact extends Component {
           </div>
           <div className="col-12 col-sm-11 offset-sm-1">
             <div className="btn-group" role="group">
-              <a
-                role="button"
-                className="btn btn-primary"
-                href="tel:+85212345678"
-              >
+              <a role="button" className="btn btn-dark" href="tel:+85212345678">
                 <i className="fa fa-phone"></i> Call
               </a>
-              <a role="button" className="btn btn-info">
-                <i className="fa fa-skype"></i> Skype
+              <a role="button" className="btn btn-dark" href="tel:+85212345678">
+                <i className="fa fa-fax"></i> Fax
               </a>
               <a
                 role="button"
-                className="btn btn-success"
+                className="btn btn-dark"
                 href="mailto:confusion@food.net"
               >
                 <i className="fa fa-envelope-o"></i> Email
@@ -93,7 +86,7 @@ class Contact extends Component {
         </div>
         <div className="row row-content">
           <div className="col-12">
-            <h3>Send us Your Feedback</h3>
+            <h3 className="gutter-bottom">Send Us Your Feedback</h3>
           </div>
           <div className="col-12 col-md-9">
             <Form
@@ -256,7 +249,7 @@ class Contact extends Component {
               </Row>
               <Row className="form-group">
                 <Col md={{ size: 10, offset: 2 }}>
-                  <Button type="submit" color="primary">
+                  <Button type="submit" className="comment-button">
                     Send Feedback
                   </Button>
                 </Col>

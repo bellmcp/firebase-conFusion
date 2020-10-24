@@ -16,7 +16,7 @@ function RenderMenuItem({ dish, onClick }) {
       <Link to={`/menu/${dish._id}`}>
         <CardImg width="100%" src={dish.image} alt={dish.name} />
         <CardImgOverlay>
-          <CardTitle>{dish.name}</CardTitle>
+          <CardTitle className="dropshadow-text">{dish.name}</CardTitle>
         </CardImgOverlay>
       </Link>
     </Card>
