@@ -1,6 +1,9 @@
 {
   "name": "firebase-confusion",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.19.0"
+  },
   "private": true,
   "dependencies": {
     "express": "^4.17.1",
