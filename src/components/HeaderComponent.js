@@ -112,7 +112,7 @@ class Header extends Component {
                 <NavItem>
                   {!this.props.auth.isAuthenticated ? (
                     <Button outline onClick={this.toggleModal}>
-                      <span className="fa fa-sign-in fa-lg"></span> LOGIN
+                      LOGIN
                       {this.props.auth.isFetching ? (
                         <span className="fa fa-spinner fa-pulse fa-fw"></span>
                       ) : null}
